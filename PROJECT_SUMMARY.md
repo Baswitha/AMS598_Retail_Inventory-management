@@ -440,7 +440,7 @@ overall_mae = np.mean(all_mae)
 
 ---
 
-## 🎯 9. Feature Importance Analysis
+## 9. Feature Importance Analysis
 
 After training, analyze which features are most important:
 
@@ -469,7 +469,7 @@ print(importance_df.head(20))
 
 ---
 
-## 💡 10. Tips for Successful Implementation
+##  10. Tips for Successful Implementation
 
 ### Memory Management
 - Load data in chunks if needed
@@ -530,33 +530,7 @@ AMS598_project/
     └── evaluation_results.csv        # Performance metrics
 ```
 
----
 
-## 📞 13. Questions for Your Team to Answer
-
-Before starting model implementation:
-
-1. **Computational Resources**:
-   - How many CPU cores/nodes available?
-   - RAM per node?
-   - GPU availability?
-
-2. **Model Preferences**:
-   - Prioritize speed or accuracy?
-   - Need interpretability?
-   - Ensemble multiple models?
-
-3. **Deployment**:
-   - Real-time predictions needed?
-   - Batch processing acceptable?
-   - Model update frequency?
-
-4. **Business Constraints**:
-   - Acceptable error rate?
-   - Critical product families?
-   - Specific stores to prioritize?
-
----
 
 ## 🎓 14. Key Takeaways
 
@@ -580,35 +554,3 @@ Your model should aim for:
 - **MAPE < 30%** (acceptable for retail)
 - **Training time < 2 hours** (with MPI parallelization)
 
----
-
-## 📚 15. Additional Resources
-
-### Recommended Reading
-- [LightGBM Documentation](https://lightgbm.readthedocs.io/)
-- [MPI4py Tutorial](https://mpi4py.readthedocs.io/)
-- [Time Series Forecasting Best Practices](https://otexts.com/fpp3/)
-
-### Useful Libraries
-```bash
-pip install lightgbm xgboost scikit-learn mpi4py pandas numpy
-```
-
----
-
-**Document Version**: 1.0  
-**Last Updated**: November 22, 2025  
-**Prepared By**: Data Preparation Team  
-**Next Phase Owner**: Model Development Team (MPI4py + Forecasting)
-
----
-
-## 🚦 Ready to Start?
-
-Your data is **100% ready** for model training. The next team can immediately begin:
-1. Loading the processed parquet files
-2. Setting up MPI4py parallelization
-3. Training models for each store-item combination
-4. Generating 14-day forecasts
-
-**Good luck with the modeling phase! 🚀**
